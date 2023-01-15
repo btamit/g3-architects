@@ -177,17 +177,25 @@ nav > ul > li > a{
     display: flex;
     justify-content: space-between;
 }
-.projects-hover:hover{
+
+.box{
+    width: 250px;
+    height: 250px;
+    border: 2px solid blue;
+    /* background-color: coral; */
+    transition: width 1s linear 1s, height 1s linear 1s, transform 1s;
+}
+.box:hover{
+    width: 500px;
+    height: 400px;
+    transform: rotate(180deg);
+}
+ .projects-hover:hover{
     background-color: darkblue;
     cursor: pointer;
     border: 2px solid yellow;
-}
-.projects-number:hover{
-    color: white;
-}
-.projects-status:hover{
-    color: white;
-}
+ }
+
 .projects > div{
     border: 2px solid #FF900E;
     padding: 40px 60px;
@@ -202,7 +210,7 @@ nav > ul > li > a{
 .projects-status{
     font-size: 20px;
     color: #727272;
-}
+} 
 
 /* Our Sponsors Styles */
 .sponsors{
